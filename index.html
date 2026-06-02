@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles1.css">
+    <title>Local Community Event Portal</title>
+    <!-- internal css -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <h2>Login</h2>
-        <form action="login.php" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
-        </form>
+        <div class="heading">
+            <h1 id="h1">Local Community Event Portal</h1>
+            <p>Welcome to the Local Community Event Portal!</p>
+        </div>
+        <div class="upcoming-events">
+            <div class="event">
+                <h2>Event 1</h2>
+                <p>Date: 2024-07-01</p>
+                <p>Location: Community Park</p>
+                <p>Description: Join us for a fun day of games, food, and entertainment for the whole family!</p>
+            </div>
+            <div class="event">
+                <h2>Event 2</h2>
+                <p>Date: 2024-07-15</p>
+                <p>Location: Town Hall</p>
+                <p>Description: Come join us for an evening of live music and refreshments!</p>
+            </div>
+            <div class="event">
+                <h2>Event 3</h2>
+                <p>Date: 2024-07-30</p>
+                <p>Location: Library</p>
+                <p>Description: Participate in our monthly book club discussion and social gathering.</p>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>

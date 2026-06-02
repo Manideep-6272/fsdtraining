@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management System</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 1fr 5fr;
+            grid-template-areas:
+                "hd hd"
+                "nv cntt";
+        }
+        .header{
+            background-color: #1B2A41;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            grid-area: hd;
+        }
+        .nav{
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            grid-area: nv;
+        }
+        .nav-list{
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+        }
+        .nav-list a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav-list a:hover{
+            color:red;
+            font-weight: bold;
+            /* font-size: 20px; */
+        }
+        .content{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            grid-area: cntt;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Student Management System</h1>
+      </div>
+      <div class="nav">
+        <ul class="nav-list">
+          <li><a href="grid.html">Home</a></li>
+          <li><a href="addstudents.html">Add Student</a></li>
+          <li><a href="viewstudents.html">View Students</a></li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h2>Welcome to the Student Management System</h2>
+        <p>This is a simple web application to manage student information.</p>
+      </div>
+    </div>
+  </body>
+</html>
