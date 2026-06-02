@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 50%;
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            animation:fadein 1s ease-in;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            height: 40px;
+            width: 100px;
+        }
+        button:hover{
+            background-color: red;
+            color: white;
+            transition: all 0.7s;
+        }
+        @keyframes fadein {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Management System</h1>
+        <p>Welcome to the Student Management System. Please register to access your dashboard.</p>
+        <button class="register-btn">Register</button>
+        <div class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Student Registration</li>
+                <li>Attendance Tracking</li>
+                <li>Results Management</li>
+            </ul>
+        </div>
+        <footer>
+            <p>&copy; 2026 Student Management System. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
