@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .traffic {
+            width: 100px;
+            height: 300px;
+            background-color: black;
+            display: flex;
+            border-radius: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        .light {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: gray;
+        }
+        .red {
+            background-color: red;
+            animation: redlight 6s infinite;
+        }
+        .yellow {
+            background-color: yellow;
+            animation: yellowlight 6s infinite;
+        }
+        .green {
+            background-color: green;
+            animation: greenlight 6s infinite;
+        }
+
+        @keyframes redlight{
+            0%,33.33%{background-color: red;}
+            33.37%,100% {background-color: rgb(82, 43, 43);}
+        }
+        @keyframes yellowlight{
+            0%,33.33%{background-color: rgb(105, 105, 67);}
+            33.37%,66.66% {background-color: yellow;}
+            66.67%,100%{background-color: rgb(105, 105, 67);}
+        }
+        @keyframes greenlight {
+            0%,66.66%{background-color: rgb(38, 65, 38);}
+            66.67%,100%{background-color: green;}
+        }
+    </style>
+</head>
+<body>
+    <div class="traffic">
+        <div class="red light"></div>
+        <div class="yellow light"></div>
+        <div class="green light"></div>
+    </div>
+</body>
+</html>
